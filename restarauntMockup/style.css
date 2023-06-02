@@ -1,0 +1,94 @@
+.headerContainer, .footerContainer {
+    border: solid red;
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.pic {
+    border: solid yellow;
+    width: 30%;
+    height: 30%;
+}
+
+#menuPic {
+    width: 50%;
+    height: 30%;
+}
+
+.title {
+    border: solid orange;
+}
+
+.navBar {
+    border: solid blue;
+    display: flex;
+    justify-content: center;
+}
+
+.info {
+    border: solid green;
+    padding: .8em;
+}
+
+.infoBtn {
+    border: solid purple;
+    display: inline;
+    margin: 1em;
+    padding: .5em;
+    border-radius: 10px;
+}
+
+.contact {
+    border: solid silver;
+    margin: 2em;
+}
+
+.menuContainer {
+    border: solid greenyellow;
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.menu {
+    border: solid royalblue;
+    text-align: center;
+    display: inline;
+    width: 20%;
+    height: 100%;
+    vertical-align: top;
+    margin: 3px;
+    padding: 1em;
+}
+
+.menuHeader, .menuDish, .menuDesc, .menuPrice {
+    margin: 0;
+}
+
+.menuHeader {
+    border: solid salmon;
+    justify-content: center;
+
+}
+
+.menuDish {
+    border: solid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+
+}
+
+.menuDesc {
+    border: solid;
+    font-size: small;
+}
+
+.menuPrice {
+    border: solid;
+    font-size: small;
+    vertical-align: top;
+    display: inline;
+}
+
+
