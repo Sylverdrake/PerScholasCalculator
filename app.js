@@ -1,13 +1,15 @@
 let screen = document.querySelector(`.screen`)
-    // QuerySelector allows navcigation to an html tag by class name and target the element
+    // QuerySelector allows navigation to an html tag by class name and target the element
 
-    const uploadToScreen = (number) => {
-        screen.append(number)
+    const uploadToScreen = (number) => 
+    {
+        screen.innerHTML += number
     };
 
     // will show the value of what you are doing on screen
 
-const clearScreen = () => {
+const clearScreen = () => 
+{
         screen.innerHTML = ""
     };
 
@@ -16,16 +18,54 @@ const clearScreen = () => {
 
     // Keep it dry
 
-    const calculate Terms (x, y, sign) => {
-        
+    const calculateTerms = (x, y, sign) => 
+    {
+        if (sign === '+')
+        {
+            screen.innerHTML = (parseInt(x) + parseInt(y))
+        }
+        if (sign === '-')
+        {
+            screen.innerHTML = (parseInt(x) - parseInt(y))
+        }
+        if (sign === '*')
+        {
+            screen.innerHTML = (parseInt(x) - parseInt(y))
+        }
+        if (sign === '/')
+        {
+            screen.innerHTML = (parseInt(x) - parseInt(y))
+        }
     };
 
 
 
     const splitInput = () => {
-        let nput = screen.textContent;
-        console.log(nput);
-        if (nput.includes("+"));
-        console.log("input:", solve);
-        calculateTerms(solve[0], solve[1], "+")
+        let input = screen.textContent;
+        console.log(input);
+
+        if (input.includes("+"))
+        {
+            let solve = input.split('+')
+            console.log("input:", solve);
+            calculateTerms(solve[0], solve[1], "+")
+        }
+        if (input.includes("-"))
+        {
+            let solve = input.split('-')
+            console.log("input:", solve);
+            calculateTerms(solve[0], solve[1], "-")
+        }
+        if (input.includes("*"))
+        {
+            let solve = input.split('*')
+            console.log("input:", solve);
+            calculateTerms(solve[0], solve[1], "*")
+        }
+        if (input.includes("/"))
+        {
+            let solve = input.split('/')
+            console.log("input:", solve);
+            calculateTerms(solve[0], solve[1], "/")
+        }
     }
